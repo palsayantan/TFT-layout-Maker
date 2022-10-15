@@ -1,0 +1,274 @@
+/*.konvajs-content {*/
+/*    border: 1px solid #AAA;*/
+/*}*/
+
+.shape-properties {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    border: 1px solid #d1d1d1;
+    height: 250px;
+    padding: 1em;
+    background-color: white;
+}
+
+.tft-code {
+    font-family: monospace;
+    font-size: 1.1em;
+    margin-right: .5em;
+    word-wrap: anywhere;
+}
+
+.container {
+    padding: 0;
+    max-width: initial;
+}
+
+.row {
+    margin-left: 0;
+}
+
+.row .column-3 {
+    flex: 0 0 3%;
+    max-width: 3%;
+}
+
+header {
+    background-color: #e7e7e7;
+    width: 100vw;
+    height: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    margin: auto 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+header div:first-child {
+    justify-content: left;
+    margin-left: 3em;
+}
+header div:last-child {
+    justify-content: right;
+}
+
+
+
+header label {
+    display: inline-block;
+    float:left; 
+    margin-right: 2em;
+    margin-bottom: 0;
+}
+header pre {
+    margin: 0;
+}
+/*header label:first-child { */
+/*    margin-left: 3em;*/
+/*}*/
+
+
+.c-tools-panel {
+    background-color: #e7e7e7;
+    height: calc(100vh - 2em);
+    width: 3em;
+    float: left;
+}
+.c-tools-foldout__header {
+    text-transform: uppercase;
+}
+.c-tools-panel__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    padding: .5em;
+}
+
+.c-tools-panel__button--active {
+    background-color: #c5c5c5;
+}
+
+.c-tools-panel__button svg {
+    color: #333;
+    width: 20px;
+    height: 20px;
+}
+
+.c-tools-panel__button:hover, .c-tools-panel__button .active {
+    background-color: #c5c5c5;
+}
+
+.c-tools-foldout {
+    background-color: #c5c5c5;
+    float: left;
+    height: calc(100vh - 2em);
+    padding: 0 1em;
+    width: 13em;
+}
+
+.c-button--remove {
+    background-color: darkred !important;
+}
+
+.c-button--center {
+    width: 100%;
+    margin: auto;
+}
+#workspace {
+    float: left;
+    width: calc(100vw - 39em);
+    padding: 1em;
+    background-color: #222222;
+    height: calc(100vh - 4em);
+}
+#zoom-tools {
+    position: fixed;
+    bottom: 10px;
+    right: 19.5em;
+    color: #fff;
+}
+    #zoom-tools label{
+        display:  inline-block;
+        padding: .5em;
+        float: left;
+    }
+.c-move-workspace-button
+{
+    position: absolute;
+    top: 40px;
+    right: 19.5em;
+    color: white;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+}
+
+.c-move-workspace-button:hover
+{
+    background-color: #606c76;
+
+}
+
+.c-move-workspace-button--active
+{
+    color: #333;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.c-shapes-container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 74vh;
+}
+.c-shapes-container__item {
+    float:left;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+.c-shapes-container__item p {
+    width: 60px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.c-shapes-container__item svg {
+    width: 60px;
+    height: 60px;
+    fill: white;
+}
+.c-shapes-container__item img {
+    width: 60px;
+    height: 60px;
+    fill: white;
+}
+
+
+.c-shapes-container label {
+    display: inline-block;
+    width: 90%;
+}
+
+
+.c-code-output {
+    background-color: #c5c5c5;
+    float: left;
+    height: calc(100vh - 2em);
+    padding: 0 1em;
+    width: 17em;
+    overflow-y: scroll;
+}
+.c-code-output:hover
+{
+    cursor: copy;
+}
+
+.code-element {
+    font-size: 1.2em;
+    font-family: monospace;
+    display: block;
+    word-break: break-word;
+}
+
+.shape--stroked {
+    fill-opacity: 0; stroke:white; stroke-width: 6
+}
+
+.shape--filled {
+    fill:white;
+}
+
+.u-center {
+    margin: auto;
+}
+
+.c-text-tools {
+ position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: left;
+    margin-left: 19em;
+    width: 100%;
+}
+.c-text-tools > div{
+    display: flex;
+    align-items: baseline;
+}
+
+    .c-text-tools label {
+        color: white;
+        float:left;
+    }
+.c-text-tools input {
+    width: 18em;
+    border-bottom: 1px solid white;
+    margin: 0 1em 1em 1em;
+    color: white;
+    padding: .2em;
+}
+.c-text-tools input[type='color']{
+    width: 4em;
+    border-bottom: 0;
+    position: relative;
+    top: .7em;
+}
+.c-text-tools input[type='checkbox']{
+    width: 1em;
+    margin: 0 .5em 0 0;
+    position: relative;
+    top: .1em;
+}
+
+.c-text-tools select {
+    width: 4em;
+    border: 1px solid white;
+    margin: 0 2em 1em 1em;
+    color: white;
+    padding: .2em;
+}
